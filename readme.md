@@ -31,7 +31,7 @@ As principais tecnologias utilizadas no desenvolvimento deste projeto são:
 1. Faça o download ou clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/bikcraft-website.git
+git https://jpftinoco.github.io/site/
 ```
 
 2. Abra o arquivo `index.html` em seu navegador.
