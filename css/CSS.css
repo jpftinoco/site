@@ -1,68 +1,61 @@
 
 
-body{ 
-    font-family: Arial, Helvetica, sans-serif; /*altera o tipo de fonte presente no documento*/
+body { 
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f7f7f7;
     display: grid;
     justify-items: center;
     gap: 60px;
     margin-top: 60px;
-
 }
 
-p{
-    front-size: 20px; /*altera o tamanho dos paragrafos de 16px para 20px*/
+p {
+    font-size: 20px;
 }
 
-a{
-    text-decoration: none; /* tira qualquer decoraçao da tag*/
+a {
+    text-decoration: none;
 }
 
-img{
-    max-width: 100%; /*evita que o overflow, a img ocupa 100% do elemento pai*/
+img {
+    max-width: 100%;
     display: block;
 }
 
-li{
-    list-style: none; /* */
+li {
+    list-style: none;
 }
 
-p,h1,h2,h3 {
+p, h1, h2, h3 {
     margin: 0px;
 }
 
-
-.menu{
-    display: flex;          /* alinha os itens horizontal*/
-    gap: 150px;              /*cria um distanciamento entre os itens*/
+.menu {
+    display: flex;
+    gap: 150px;
     padding-top: 30px;
 }
 
-.menu a{
-    background-color: #ffff;
-    padding: 15px 30px;     /*espaçamento interno, quando utilizamos o atalho padding com dois valores, o primeiro valor é para cima/baixo e o segundo valor e para direita/esquerda*/
-    border-radius: 5px;     /* arredonda as laterais da borda*/
+.menu a {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
     color: #000000;
-    text-transform: uppercase;  /*dixar o txto como voce quiser*/
-    
+    text-transform: uppercase;
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: rgb(131, 6, 6);
-    color:#ffff
+    color: #ffffff;
 }
 
-
-/* estilizaçao do conteudo  */
-
-.conteudo{
+.conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
-
 }
 
-.introducao{
+.introducao {
     background-color: #ffffff;
     padding: 50px;
     text-align: right;
@@ -72,16 +65,15 @@ p,h1,h2,h3 {
     gap: 20px;
 }
 
-.botao{
+.botao {
     background-color: red;
-    color: #ffff;
+    color: #ffffff;
     padding: 15px 30px;
     text-transform: uppercase;
     border-radius: 5px;
-    
 }
 
-.subtitulo{
+.subtitulo {
     font-size: 60px;
     text-transform: uppercase;
     padding: 40px;
@@ -90,27 +82,85 @@ p,h1,h2,h3 {
     align-self: center;
 }
 
-.vantagens{
+.vantagens {
     background-color: #ffffff;
     padding: 40px;
 }
 
-.vantagens-item{
+.vantagens-item {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px 20px;
     padding: 20px;
 }
 
-.vantagens-item p{
+.vantagens-item p {
     grid-column: 2;
 }
 
-
-.rodape{
-    background-color: #ffff;
+.rodape {
+    background-color: #ffffff;
     padding: 40px 0px;
     text-align: center;
-    width: 100%;           /*faz com que o elemento fique 100% do elemento pai(voce nao esta utilizando display) */
+    width: 100%;
     box-sizing: border-box;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .menu {
+        gap: 100px;
+    }
+
+    .subtitulo {
+        font-size: 50px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+
+    .subtitulo {
+        font-size: 40px; /* Diminui o tamanho da fonte */
+    }
+
+    .introducao {
+        text-align: center; /* Centraliza o texto */
+        justify-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .botao {
+        padding: 10px 20px; /* Diminui o padding do botão */
+    }
+
+    .subtitulo {
+        font-size: 30px; /* Diminui ainda mais o tamanho da fonte */
+    }
+
+    .vantagens-item {
+        grid-template-columns: 1fr; /* Uma coluna para itens de vantagens */
+    }
 }
