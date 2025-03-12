@@ -7,6 +7,7 @@ body{
     justify-items: center;
     gap: 60px;
     margin-top: 60px;
+
 }
 
 p{
@@ -19,11 +20,17 @@ a{
 
 img{
     max-width: 100%; /*evita que o overflow, a img ocupa 100% do elemento pai*/
+    display: block;
 }
 
 li{
     list-style: none; /* */
 }
+
+p,h1,h2,h3 {
+    margin: 0px;
+}
+
 
 .menu{
     display: flex;          /* alinha os itens horizontal*/
@@ -53,7 +60,6 @@ li{
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
 
-    
 }
 
 .introducao{
@@ -75,17 +81,6 @@ li{
     
 }
 
-.rodape{
-    background-color: #ffff;
-    padding: 40px;
-    text-align: center;
-    width: 100%;           /*faz com que o elemento fique 100% do elemento pai(voce nao esta utilizando display) */
-}
-
-.butao{
-
-}
-
 .subtitulo{
     font-size: 60px;
     text-transform: uppercase;
@@ -95,4 +90,27 @@ li{
     align-self: center;
 }
 
+.vantagens{
+    background-color: #ffffff;
+    padding: 40px;
+}
 
+.vantagens-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 20px;
+    padding: 20px;
+}
+
+.vantagens-item p{
+    grid-column: 2;
+}
+
+
+.rodape{
+    background-color: #ffff;
+    padding: 40px 0px;
+    text-align: center;
+    width: 100%;           /*faz com que o elemento fique 100% do elemento pai(voce nao esta utilizando display) */
+    box-sizing: border-box;
+}
