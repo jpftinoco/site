@@ -1,0 +1,98 @@
+
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif; /*altera o tipo de fonte presente no documento*/
+    background-color: #f7f7f7;
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+p{
+    front-size: 20px; /*altera o tamanho dos paragrafos de 16px para 20px*/
+}
+
+a{
+    text-decoration: none; /* tira qualquer decoraçao da tag*/
+}
+
+img{
+    max-width: 100%; /*evita que o overflow, a img ocupa 100% do elemento pai*/
+}
+
+li{
+    list-style: none; /* */
+}
+
+.menu{
+    display: flex;          /* alinha os itens horizontal*/
+    gap: 150px;              /*cria um distanciamento entre os itens*/
+    padding-top: 30px;
+}
+
+.menu a{
+    background-color: #ffff;
+    padding: 15px 30px;     /*espaçamento interno, quando utilizamos o atalho padding com dois valores, o primeiro valor é para cima/baixo e o segundo valor e para direita/esquerda*/
+    border-radius: 5px;     /* arredonda as laterais da borda*/
+    color: #000000;
+    text-transform: uppercase;  /*dixar o txto como voce quiser*/
+    
+}
+
+.menu a:hover{
+    background-color: rgb(131, 6, 6);
+    color:#ffff
+}
+
+
+/* estilizaçao do conteudo  */
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+
+    
+}
+
+.introducao{
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    justify-items: right;
+    gap: 20px;
+}
+
+.botao{
+    background-color: red;
+    color: #ffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    
+}
+
+.rodape{
+    background-color: #ffff;
+    padding: 40px;
+    text-align: center;
+    width: 100%;           /*faz com que o elemento fique 100% do elemento pai(voce nao esta utilizando display) */
+}
+
+.butao{
+
+}
+
+.subtitulo{
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: end;
+    align-self: center;
+}
+
+
